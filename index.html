@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="src/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
@@ -46,32 +47,46 @@
 
     <section class="section bd-container">
       <div class="section__container bd-grid">
-        <div class="section__data">
-          <img src="images/illustration-grow-together.svg" alt="section1" class="section__img">
-          <h3 class="section__title">Grow Together</h3>
-          <p class="section__description">Generate meaningful discussions with your audience and build a strong, loyal community. 
-            Think of the insightful conversations you miss out on with a feedback form.</p>
+        <div class="section__data bd-grid">
+          <div>
+            <h3 class="section__title">Grow Together</h3>
+            <p class="section__description">Generate meaningful discussions with your audience and build a strong, loyal community. 
+              Think of the insightful conversations you miss out on with a feedback form.</p>
+            </div>
+            <div class="section__img">
+                <img src="images/illustration-grow-together.svg" alt="section1">
+            </div>
         </div>
-        <div class="section__data">
-          <img src="images/illustration-flowing-conversation.svg" alt="section2" class="section__img">
-          <h3 class="section__title">Flowing Conversation</h3>
-          <p class="section__description">You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+
+        <div class="section__data bd-grid">
+          <div class="section__img">
+            <img src="images/illustration-flowing-conversation.svg" alt="section2">
+          </div>
+          <div>
+            <h3 class="section__title">Flowing Conversation</h3>
+            <p class="section__description">You wouldn't paginate a conversation in real life, so why do it online? Our threads 
             have just-in-time loading for a more natural flow.</p>
+          </div>
         </div>
-        <div class="section__data">
-          <img src="images/illustration-your-users.svg" alt="section3" class="section__img">
-          <h3 class="section__title">Your Users</h3>
-          <p class="section__description">It takes no time at all to integrate Huddle with your app's authentication solution. 
+        
+        <div class="section__data bd-grid">
+          <div>
+            <h3 class="section__title">Your Users</h3>
+            <p class="section__description">It takes no time at all to integrate Huddle with your app's authentication solution. 
             This means, once signed in to your app, your users can start chatting immediately.</p>
+          </div>
+          <div class="section__img">
+            <img src="images/illustration-your-users.svg" alt="section3">
+          </div>
         </div>
       </div>
     </section>
 
   </main>
-  <section class="cta section bd-container">
-    <div class="section__container bd-grid">
-      <div class="section__data">
-        <h3 class="section__title">Ready To Build Your Community?</h3>
+  <section class="cta section cta-container">
+    <div class="cta__container bd-grid">
+      <div class="cta__data">
+        <h3 class="cta__title">Ready To Build Your Community?</h3>
         <a href="#" class="button button__footer">Get Started For Free</a>
       </div>
     </div>
@@ -114,12 +129,26 @@
               </ul>
         </div>
 
-        <p class="footer__copy">&#169; 2021 All right reserved</p>
+        <div class="footer__content footer__list">
+          <div class="social">
+            <div class="social__content">
+              <i class='bx bxl-facebook'></i>
+            </div>
+            <div class="social__content">
+              <i class='bx bxl-twitter' ></i>
+            </div>
+            <div class="social__content">
+              <i class='bx bxl-instagram-alt' ></i>
+            </div>
+          </div>
+          <p class="footer__copy">&#169; Copyright 2021 Huddle. All rights reserved.</p>
+        </div>
+        
     </div>
     <div>
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="https://github.com/dyoba10">Dyoba</a>.
       </p>
     </div>
 </footer>
